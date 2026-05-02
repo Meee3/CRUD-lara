@@ -15,18 +15,15 @@
 
     <nav class="navbar navbar-dark bg-dark mb-4">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('users.index') }}">Contatos</a>
-            <div>
-                {{-- @auth
+            <a class="navbar-brand" href="{{ route('contacts.index') }}">Contatos</a>
+            @auth
                 <form action="{{ route('logout') }}" method="POST" class="d-inline">
                     @csrf
-                    <button class="btn btn-outline-light btn-sm">Sair</button>
+                    <button type="submit" class="btn btn-link nav-link text-white p-0">Logout</button>
                 </form>
-                @endauth
-                @guest
-                <a href="{{ route('login') }}" class="btn btn-outline-light btn-sm">Login</a>
-                @endguest --}}
-            </div>
+            @else
+                <a class="nav-link text-white" href="{{ route('login') }}">Login</a>
+            @endauth
         </div>
     </nav>
 
