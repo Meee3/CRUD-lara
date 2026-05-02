@@ -1,0 +1,20 @@
+{
+  "name": "alfasoft",
+  "version": "1.0.0",
+  "description": "task-crud",
+  "homepage": "https://github.com/Meee3/CRUD-lara#readme",
+  "bugs": {
+    "url": "https://github.com/Meee3/CRUD-lara/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meee3/CRUD-lara.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
